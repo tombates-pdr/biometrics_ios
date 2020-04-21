@@ -3,22 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8B9193C4244ECCEE007B1D9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9193C3244ECCEE007B1D9F /* AppDelegate.swift */; };
-		8B9193C6244ECCEE007B1D9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9193C5244ECCEE007B1D9F /* SceneDelegate.swift */; };
 		8B9193C8244ECCEE007B1D9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9193C7244ECCEE007B1D9F /* ViewController.swift */; };
 		8B9193CB244ECCEE007B1D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9193C9244ECCEE007B1D9F /* Main.storyboard */; };
 		8B9193CD244ECCF2007B1D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9193CC244ECCF2007B1D9F /* Assets.xcassets */; };
 		8B9193D0244ECCF2007B1D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9193CE244ECCF2007B1D9F /* LaunchScreen.storyboard */; };
+		D281A3E4E3494244F7358457 /* Pods_BiometricExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1118C4365C5737D394AD076F /* Pods_BiometricExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08D52D6E88406A38841C4086 /* Pods-BiometricExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometricExample.release.xcconfig"; path = "Target Support Files/Pods-BiometricExample/Pods-BiometricExample.release.xcconfig"; sourceTree = "<group>"; };
+		1118C4365C5737D394AD076F /* Pods_BiometricExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiometricExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80EACFFE0CBE944DF41B7A14 /* Pods-BiometricExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometricExample.debug.xcconfig"; path = "Target Support Files/Pods-BiometricExample/Pods-BiometricExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8B9193C0244ECCEE007B1D9F /* BiometricExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9193C3244ECCEE007B1D9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B9193C5244ECCEE007B1D9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B9193C7244ECCEE007B1D9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B9193CA244ECCEE007B1D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B9193CC244ECCF2007B1D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D281A3E4E3494244F7358457 /* Pods_BiometricExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EB60BC68127CF457D5128C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1118C4365C5737D394AD076F /* Pods_BiometricExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		803A8E1483956FEF04B2535E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80EACFFE0CBE944DF41B7A14 /* Pods-BiometricExample.debug.xcconfig */,
+				08D52D6E88406A38841C4086 /* Pods-BiometricExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B9193B7244ECCEE007B1D9F = {
 			isa = PBXGroup;
 			children = (
 				8B9193C2244ECCEE007B1D9F /* BiometricExample */,
 				8B9193C1244ECCEE007B1D9F /* Products */,
+				803A8E1483956FEF04B2535E /* Pods */,
+				6EB60BC68127CF457D5128C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				8B9193C3244ECCEE007B1D9F /* AppDelegate.swift */,
-				8B9193C5244ECCEE007B1D9F /* SceneDelegate.swift */,
 				8B9193C7244ECCEE007B1D9F /* ViewController.swift */,
 				8B9193C9244ECCEE007B1D9F /* Main.storyboard */,
 				8B9193CC244ECCF2007B1D9F /* Assets.xcassets */,
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B9193D4244ECCF2007B1D9F /* Build configuration list for PBXNativeTarget "BiometricExample" */;
 			buildPhases = (
+				91A3B6536C9C46DBB61DE513 /* [CP] Check Pods Manifest.lock */,
 				8B9193BC244ECCEE007B1D9F /* Sources */,
 				8B9193BD244ECCEE007B1D9F /* Frameworks */,
 				8B9193BE244ECCEE007B1D9F /* Resources */,
+				781A8853845A3E137AD00082 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +156,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		781A8853845A3E137AD00082 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiometricExample/Pods-BiometricExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiometricExample/Pods-BiometricExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiometricExample/Pods-BiometricExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A3B6536C9C46DBB61DE513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiometricExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B9193BC244ECCEE007B1D9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +205,6 @@
 			files = (
 				8B9193C8244ECCEE007B1D9F /* ViewController.swift in Sources */,
 				8B9193C4244ECCEE007B1D9F /* AppDelegate.swift in Sources */,
-				8B9193C6244ECCEE007B1D9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,11 +346,13 @@
 		};
 		8B9193D5244ECCF2007B1D9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EACFFE0CBE944DF41B7A14 /* Pods-BiometricExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436EF7NAXN;
 				INFOPLIST_FILE = BiometricExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +366,13 @@
 		};
 		8B9193D6244ECCF2007B1D9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D52D6E88406A38841C4086 /* Pods-BiometricExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 436EF7NAXN;
 				INFOPLIST_FILE = BiometricExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
